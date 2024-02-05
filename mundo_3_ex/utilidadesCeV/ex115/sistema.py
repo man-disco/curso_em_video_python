@@ -23,12 +23,12 @@ def cadastrar():
                 interface.mensagem('Digite uma idade válida!\n')
             else:
                 file.write(f'\n{nome.title():.<25} {idade}')
+                system(limpa(name))
+                interface.mensagem('Pessoa cadastrada.', 20, False)
                 break
-            finally:
                 file.close()
-            system(limpa(name))
-            interface.mensagem('Pessoa cadastrada.', 20, False)
-                
+
+            
             
 
 def visualizar():
